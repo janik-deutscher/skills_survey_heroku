@@ -14,7 +14,7 @@ gatherUsageStats = false
 # Hides the hamburger menu in the top right (containing Settings, About, etc.)
 headless = true
 # Allows cross-origin requests if needed, keep default usually
-# enableCORS = false
+enableCORS = false
 
 [logger]
 # Set logging level ('error', 'warning', 'info', or 'debug')
