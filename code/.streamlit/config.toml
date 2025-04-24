@@ -1,0 +1,26 @@
+# .streamlit/config.toml
+
+[client]
+# Minimal appearance of user interface toolbar (hides Fork button etc)
+toolbarMode = "minimal"
+# Disable the warning users see when they enter data into forms/widgets.
+showWarningOnDirectExecution = false
+
+[browser]
+# Disable streamlit collecting anonymous usage statistics
+gatherUsageStats = false
+
+[server]
+# Hides the hamburger menu in the top right (containing Settings, About, etc.)
+headless = true
+# Allows cross-origin requests if needed, keep default usually
+# enableCORS = false
+
+[logger]
+# Set logging level ('error', 'warning', 'info', or 'debug')
+level = "info"
+
+# Optional: Define a custom theme
+# [theme]
+# base="light"
+# primaryColor="#your_color_here"

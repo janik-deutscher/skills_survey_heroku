@@ -1,0 +1,14 @@
+streamlit==1.42.2  # Keep your specific version if needed, or remove ==... for latest
+openai==1.63.2      # Keep specific version or remove ==...
+# anthropic==0.46.0 # Comment out or remove if MODEL in config.py is OpenAI
+pandas
+numpy
+gspread
+google-auth
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+google-cloud-firestore
+tenacity
+streamlit-local-storage
+snowflake-snowpark-python
