@@ -15,10 +15,6 @@ from google.cloud import firestore
 from google.oauth2 import service_account as google_service_account # Alias to avoid name conflict
 # --- END NEW Firestore Imports ---
 
-secrets_path = "/etc/secrets/secrets.toml"
-
-secrets = toml.load(secrets_path)
-
 # --- Firestore Client Initialization ---
 @st.cache_resource
 def get_firestore_client():

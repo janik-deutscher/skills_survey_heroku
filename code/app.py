@@ -37,9 +37,9 @@ anthropic_client = None
 api = None
 RETRYABLE_ERRORS = () # Default empty
 
-secrets_path = "/etc/secrets/secrets.toml"
+#secrets_path = "/etc/secrets/secrets.toml"
 
-secrets = toml.load(secrets_path)
+#secrets = toml.load(secrets_path)
 
 if "gpt" in config.MODEL.lower():
     api = "openai"; from openai import OpenAI, RateLimitError, APITimeoutError, APIConnectionError, InternalServerError as OpenAIInternalServerError
