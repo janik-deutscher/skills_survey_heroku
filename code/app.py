@@ -9,6 +9,7 @@ import json
 import numpy as np
 import uuid
 import random # For GSheet throttle sleep
+import toml
 # Removed 're' import as it was only for manual questions map
 
 # --- NEW Firestore Import ---
@@ -35,6 +36,10 @@ openai_client = None
 anthropic_client = None
 api = None
 RETRYABLE_ERRORS = () # Default empty
+
+secrets_path = "/etc/secrets/secrets.toml"
+
+secrets = toml.load(secrets_path)
 
 if "gpt" in config.MODEL.lower():
     api = "openai"; from openai import OpenAI, RateLimitError, APITimeoutError, APIConnectionError, InternalServerError as OpenAIInternalServerError

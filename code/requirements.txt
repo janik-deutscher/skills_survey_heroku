@@ -12,3 +12,5 @@ google-cloud-firestore
 tenacity
 streamlit-local-storage
 snowflake-snowpark-python
+toml
+
